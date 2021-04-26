@@ -45,10 +45,23 @@ class Main extends Component {
             localStorage.setItem("trackArtist", trackArtist)
             localStorage.setItem("trackAlbum", trackAlbum)
             localStorage.setItem("trackURI", trackURI)
+          }
+        });
+        $.ajax({
+          url: "https://api.spotify.com/v1/audio-features/" + trackURLClean,
+          type: "GET",
+          beforeSend: (xhr) => {
+            xhr.setRequestHeader("Authorization", "Bearer " + token);
+          },
+          success: function (data) {
+            var trackDuration = data.duration_ms
+            console.log(trackDuration)
+            localStorage.setItem("trackDuration", trackDuration)
             // redirect to graphic page
             window.location.replace("http://localhost:3000/generate")
           }
         });
+
       } else {
         document.getElementById("error").innerHTML = "error - check the track URL"
       }

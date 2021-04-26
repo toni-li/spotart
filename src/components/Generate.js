@@ -4,8 +4,10 @@ import SpotifyWebPlayer from 'react-spotify-web-playback';
 const token = localStorage.getItem("token")
 const trackID = localStorage.getItem("trackID")
 const trackURI = localStorage.getItem("trackURI")
+const trackDuration = localStorage.getItem("trackDuration")
 
 console.log(trackID)
+console.log(trackDuration)
 
 
 class Generate extends Component {
