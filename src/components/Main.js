@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import * as $ from "jquery";
-
-var token = "";
-var id = "0X5mtNbqxbiTYkwj0CQc2f"; // change to take in from user CRASH MY CAR - COIN
+import SpotifyWebPlayer from 'react-spotify-web-playback';
 
 class Main extends Component {
   render() {
+    // resetting local storage
+    var reset = ""
+    localStorage.setItem("token", reset)
+    localStorage.setItem("trackID", reset)
+    localStorage.setItem("trackName", reset)
+    localStorage.setItem("trackArtist", reset)
+    localStorage.setItem("trackAlbum", reset)
+    localStorage.setItem("trackURI", reset)
+    
     function getTrackInfo(token, id) {
       // function to get the token
       var url = window.location.href
       var tokenSplit = url.split("=")[1]
       token = tokenSplit.split("&")[0]
+      localStorage.setItem("token", token)
       //console.log(token)
 
       // resetting error message
@@ -30,33 +38,42 @@ class Main extends Component {
             xhr.setRequestHeader("Authorization", "Bearer " + token);
           },
           success: function (data) {
-            // console.log(data.name);
-            // console.log(data.artists[0].name)
-            // console.log(data.album.name)
-            document.getElementById("title").innerHTML = data.name
-            document.getElementById("artist").innerHTML = data.artists[0].name
-            document.getElementById("album").innerHTML = data.album.name
+            var trackID = trackURLClean
+            var trackName = data.name
+            var trackArtist = data.artists[0].name
+            var trackAlbum = data.album.name
+            var trackURI = data.uri
+
+            console.log(trackID)
+            console.log(trackName)
+            console.log(trackArtist)
+            console.log(trackAlbum)
+            console.log(trackURI)
+
+            localStorage.setItem("trackID", trackID)
+            localStorage.setItem("trackName", trackName)
+            localStorage.setItem("trackArtist", trackArtist)
+            localStorage.setItem("trackAlbum", trackAlbum)
+            localStorage.setItem("trackURI", trackURI)
           }
         });
+        
+
+        // redirect to graphic page
+        window.location.replace("http://localhost:3000/generate")
+
       } else {
         document.getElementById("error").innerHTML = "error - check the track URL"
       }
-
-
-
     }
-
     return (
       <div id="main">
-        <div id="get-info">
-          Track URL: <input type="text" id="trackURL"></input>
-          <button id="getTrack" onClick={() => { getTrackInfo(); }}> Generate </button>
-          <p id="error"> </p>
-        </div>
-        <div id="track-info"> 
-          <p id="title"></p>
-          <p id="artist"></p>
-          <p id="album"></p>
+        <div className="App-header">
+          <div id="get-info">
+            Track URL: <input type="text" id="trackURL"></input>
+            <button id="getTrack" onClick={() => { getTrackInfo(); }}> Generate </button>
+            <p id="error"> </p>
+          </div>
         </div>
       </div>
     )
