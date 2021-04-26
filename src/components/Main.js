@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
 import * as $ from "jquery";
-import SpotifyWebPlayer from 'react-spotify-web-playback';
 
 class Main extends Component {
   render() {
-    // resetting local storage
-    var reset = ""
-    localStorage.setItem("token", reset)
-    localStorage.setItem("trackID", reset)
-    localStorage.setItem("trackName", reset)
-    localStorage.setItem("trackArtist", reset)
-    localStorage.setItem("trackAlbum", reset)
-    localStorage.setItem("trackURI", reset)
-    
-    function getTrackInfo(token, id) {
+    function getTrackInfo() {
       // function to get the token
       var url = window.location.href
       var tokenSplit = url.split("=")[1]
-      token = tokenSplit.split("&")[0]
+      var token = tokenSplit.split("&")[0]
       localStorage.setItem("token", token)
       //console.log(token)
 
@@ -55,13 +45,10 @@ class Main extends Component {
             localStorage.setItem("trackArtist", trackArtist)
             localStorage.setItem("trackAlbum", trackAlbum)
             localStorage.setItem("trackURI", trackURI)
+            // redirect to graphic page
+            window.location.replace("http://localhost:3000/generate")
           }
         });
-        
-
-        // redirect to graphic page
-        window.location.replace("http://localhost:3000/generate")
-
       } else {
         document.getElementById("error").innerHTML = "error - check the track URL"
       }
