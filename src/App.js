@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 import hash from "./hash";
 import "./App.css";
-import * as $ from "jquery";
 
 import {
   BrowserRouter as Router,
@@ -16,7 +15,7 @@ export const authEndpoint = 'https://accounts.spotify.com/authorize';
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = "f2a18728feb846ee96af7c0edee169b4";
 const redirectUri = "http://localhost:3000/callback";
-const scopes = [];
+//const scopes = [];
 
 class App extends Component {
   componentDidMount() {
@@ -28,22 +27,6 @@ class App extends Component {
         token: _token
       });
     }
-  }
-  getTrackInfo(token, id) {
-    // Make a call using the token
-    $.ajax({
-      url: "	https://api.spotify.com/v1/tracks/" + id,
-      type: "GET",
-      beforeSend: (xhr) => {
-        xhr.setRequestHeader("Authorization", "Bearer " + token);
-      },
-      success: (data) => {
-        this.setState({
-          name: data.name,
-          artist: data.artists.name,
-        });
-      }
-    });
   }
 render() {
   return (
