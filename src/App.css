@@ -115,7 +115,1667 @@ body {
   margin: 0 auto;
 }
 
-#player {
-  display: none;
+#buffer {
+  color: #333;
+}
+
+#trackName, #trackArtist, #trackAlbum {
+  position: relative;
+  left: 3%;
+  text-align: left;
+}
+
+#chart {
+  position: relative;
+  left: 10vw;
+  top: 5vw;
+  width: 80vw;
+  height: 35vw;
+  background-color: white;
+}
+
+#sq1-1 {
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-2 {
+  position: absolute;
+  left: 0%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-3 {
+  position: absolute;
+  left: 0%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-4 {
+  position: absolute;
+  left: 0%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-5 {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-6 {
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-7 {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-8 {
+  position: absolute;
+  left: 0%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-9 {
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq1-10 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 2 */
+#sq2-1 {
+  position: absolute;
+  left: 5%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-2 {
+  position: absolute;
+  left: 5%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-3 {
+  position: absolute;
+  left: 5%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-4 {
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-5 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-6 {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-7 {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-8 {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-9 {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq2-10 {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 3 */
+#sq3-1 {
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-2 {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-3 {
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-4 {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-5 {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-6 {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-7 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-8 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-9 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq3-10 {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 4 */
+#sq4-1 {
+  position: absolute;
+  left: 15%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-2 {
+  position: absolute;
+  left: 15%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-3 {
+  position: absolute;
+  left: 15%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-4 {
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-5 {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-6 {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-7 {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-8 {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-9 {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq4-10 {
+  position: absolute;
+  left: 15%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 5 */
+#sq5-1 {
+  position: absolute;
+  left: 20%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-2 {
+  position: absolute;
+  left: 20%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-3 {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-4 {
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-5 {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-6 {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-7 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-8 {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-9 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq5-10 {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 6 */
+#sq6-1 {
+  position: absolute;
+  left: 25%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-2 {
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-3 {
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-4 {
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-5 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-6 {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-7 {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-8 {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-9 {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq6-10 {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 7 */
+#sq7-1 {
+  position: absolute;
+  left: 30%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-2 {
+  position: absolute;
+  left: 30%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-3 {
+  position: absolute;
+  left: 30%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-4 {
+  position: absolute;
+  left: 30%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-5 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-6 {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-7 {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-8 {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-9 {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq7-10 {
+  position: absolute;
+  left: 30%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 8 */
+#sq8-1 {
+  position: absolute;
+  left: 35%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-2 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-3 {
+  position: absolute;
+  left: 35%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-4 {
+  position: absolute;
+  left: 35%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-5 {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-6 {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-7 {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-8 {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-9 {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq8-10 {
+  position: absolute;
+  left: 35%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 9 */
+#sq9-1 {
+  position: absolute;
+  left: 40%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-2 {
+  position: absolute;
+  left: 40%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-3 {
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-4 {
+  position: absolute;
+  left: 40%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-5 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-6 {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-7 {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-8 {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-9 {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq9-10 {
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 10 */
+#sq10-1 {
+  position: absolute;
+  left: 45%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-2 {
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-3 {
+  position: absolute;
+  left: 45%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-4 {
+  position: absolute;
+  left: 45%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-5 {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-6 {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-7 {
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-8 {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-9 {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq10-10 {
+  position: absolute;
+  left: 45%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 11 */
+#sq11-1 {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-2 {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-3 {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-4 {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-6 {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-7 {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-8 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-9 {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq11-10 {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 12 */
+#sq12-1 {
+  position: absolute;
+  left: 55%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-2 {
+  position: absolute;
+  left: 55%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-3 {
+  position: absolute;
+  left: 55%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-4 {
+  position: absolute;
+  left: 55%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-5 {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-6 {
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-7 {
+  position: absolute;
+  left: 55%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-8 {
+  position: absolute;
+  left: 55%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-9 {
+  position: absolute;
+  left: 55%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq12-10 {
+  position: absolute;
+  left: 55%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 13 */
+#sq13-1 {
+  position: absolute;
+  left: 60%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-2 {
+  position: absolute;
+  left: 60%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-3 {
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-4 {
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-5 {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-6 {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-7 {
+  position: absolute;
+  left: 60%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-8 {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-9 {
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq13-10 {
+  position: absolute;
+  left: 60%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 14 */
+#sq14-1 {
+  position: absolute;
+  left: 65%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-2 {
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-3 {
+  position: absolute;
+  left: 65%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-4 {
+  position: absolute;
+  left: 65%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-5 {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-6 {
+  position: absolute;
+  left: 65%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-7 {
+  position: absolute;
+  left: 65%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-8 {
+  position: absolute;
+  left: 65%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-9 {
+  position: absolute;
+  left: 65%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq14-10 {
+  position: absolute;
+  left: 65%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 15 */
+#sq15-1 {
+  position: absolute;
+  left: 70%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-2 {
+  position: absolute;
+  left: 70%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-3 {
+  position: absolute;
+  left: 70%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-4 {
+  position: absolute;
+  left: 70%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-5 {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-6 {
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-7 {
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-8 {
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-9 {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq15-10 {
+  position: absolute;
+  left: 70%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 16 */
+#sq16-1 {
+  position: absolute;
+  left: 75%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-2 {
+  position: absolute;
+  left: 75%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-3 {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-4 {
+  position: absolute;
+  left: 75%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-5 {
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-6 {
+  position: absolute;
+  left: 75%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-7 {
+  position: absolute;
+  left: 75%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-8 {
+  position: absolute;
+  left: 75%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-9 {
+  position: absolute;
+  left: 75%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq16-10 {
+  position: absolute;
+  left: 75%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 17 */
+#sq17-1 {
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-2 {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-3 {
+  position: absolute;
+  left: 80%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-4 {
+  position: absolute;
+  left: 80%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-5 {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-6 {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-7 {
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-8 {
+  position: absolute;
+  left: 80%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-9 {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq17-10 {
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 18 */
+#sq18-1 {
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-2 {
+  position: absolute;
+  left: 85%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-3 {
+  position: absolute;
+  left: 85%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-4 {
+  position: absolute;
+  left: 85%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-5 {
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-6 {
+  position: absolute;
+  left: 85%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-7 {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-8 {
+  position: absolute;
+  left: 85%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-9 {
+  position: absolute;
+  left: 85%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq18-10 {
+  position: absolute;
+  left: 85%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 19 */
+#sq19-1 {
+  position: absolute;
+  left: 90%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-2 {
+  position: absolute;
+  left: 90%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-3 {
+  position: absolute;
+  left: 90%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-4 {
+  position: absolute;
+  left: 90%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-5 {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-6 {
+  position: absolute;
+  left: 90%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-7 {
+  position: absolute;
+  left: 90%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-8 {
+  position: absolute;
+  left: 90%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-9 {
+  position: absolute;
+  left: 90%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq19-10 {
+  position: absolute;
+  left: 90%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+/* column 20 */
+#sq20-1 {
+  position: absolute;
+  left: 95%;
+  top: 90%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-2 {
+  position: absolute;
+  left: 95%;
+  top: 80%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-3 {
+  position: absolute;
+  left: 95%;
+  top: 70%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-4 {
+  position: absolute;
+  left: 95%;
+  top: 60%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-5 {
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-6 {
+  position: absolute;
+  left: 95%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-7 {
+  position: absolute;
+  left: 95%;
+  top: 30%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-8 {
+  position: absolute;
+  left: 95%;
+  top: 20%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-9 {
+  position: absolute;
+  left: 95%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+#sq20-10 {
+  position: absolute;
+  left: 95%;
+  top: 0%;
+  width: 5%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+#spotifyPlayer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
