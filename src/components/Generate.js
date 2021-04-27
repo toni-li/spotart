@@ -13,6 +13,7 @@ console.log(trackDuration)
 class Generate extends Component {
     render() {
         var sections = []
+        var beats = []
         var loudness = []
         window.addEventListener('load', (event) => {
             $.ajax({
@@ -23,15 +24,21 @@ class Generate extends Component {
                 },
                 success: function (data) {
                     var numSections = data.sections.length
+                    var numBeats = data.beats.length
                     //console.log(numSections);
                     var i;
-                    for (i = 0; i < numSections; i++) {
-                        sections[i] = data.sections[i].duration * 1000
-                        loudness[i] = data.sections[i].loudness
+                    sections[0] = data.sections[0].duration * 1000
+                    loudness[0] = 1 / (data.sections[0].loudness * -1)
+                    for (i = 1; i < numSections; i++) {
+                        sections[i] = sections[i-1] + data.sections[i].duration * 1000
+                        loudness[i] = 1 / (data.sections[i].loudness * -1)
+                    }
+                    for (i = 0; i < numBeats; i++) {
+                        beats[i] = data.beats[i].duration * 1000
                     }
 
-                    console.log(sections)
-                    console.log(loudness)
+                    console.log("Sections: " + sections)
+                    console.log("Loudness: " + loudness)
                 }
               });
         });
@@ -52,31 +59,63 @@ class Generate extends Component {
             console.log(playing);
         }
 
+        var time = 0;
         async function nextSection() {
             var i;
-            for (i = 0; i < sections.length; i++) {
-                console.log("Section: " + i);
-                console.log("Duration: " + sections[i]);
+            for (i = 0; i < beats.length; i++) {
                 // draw charts
-                draw()
-                await sleep(sections[i]);
+                time = time + beats[i]
+                //console.log(time)
+                draw(time)
+                await sleep(beats[i]);
             }
         }
 
-        function draw() {
-            // decide on number of squares to fill based on loudness factor
-            var loudnessFactor = 50;
+        function getSection(time) {
+            var i;
+            for (i = 0; i < sections.length; i++) {
+                if (time <= sections[i]) {
+                    return i;
+                }
+            }
+        }
+
+        function draw(time) {
             // randomize the squares to fill
             var i;
+            var j;
             var x;
             var y;
             var id;
+
+            // factors to normalize loudness feature
+            var rmin = Math.min.apply(Math, loudness);
+            var rmax = Math.max.apply(Math, loudness);
+            var tmin = 5;
+            var tmax = 20*10;
+
+            var section = getSection(time);
+            console.log("In Section: " + section)
+            var loudnessFactor = Math.floor(((loudness[section] - rmin) / (rmax - rmin)) * (tmax - tmin) + tmin)
+            console.log("Loudness Factor: " + loudnessFactor)
+    
+            // clearing grid
+            for (i = 1; i < 21; i++) {
+                for (j = 1; j < 11; j++) {
+                    id = "sq" + String(i) + "-" + String(j)
+                    document.getElementById(id).style.backgroundColor = "white";
+                }
+            }
+
+            var alphas = [0, 0.2, 0.4, 0.6, 0.8, 1]
             for (i = 0; i < loudnessFactor; i++) {
                 x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
                 y = Math.floor(Math.random() * 10) + 1 // getting y coordinate of box
+                var alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
                 id = "sq" + String(x) + "-" + String(y)
-                console.log(id)
-                document.getElementById(id).style.backgroundColor = "red";
+                //console.log(id)
+                document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
             }
         }
         
