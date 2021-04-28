@@ -108,6 +108,10 @@ class Generate extends Component {
                 }
             }
 
+            var color;
+            var r = localStorage.getItem("r");
+            var g = localStorage.getItem("g");
+            var b = localStorage.getItem("b");
             var alphas = [0, 0.2, 0.4, 0.6, 0.8, 1]
             var left = loudnessFactor;
             // row uno
@@ -117,7 +121,8 @@ class Generate extends Component {
                 alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                 id = "sq" + String(x) + "-1"
-                document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                document.getElementById(id).style.backgroundColor = color;
             }
             // row dos
             left = loudnessFactor - 20;
@@ -128,7 +133,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-2"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row tres
@@ -140,7 +146,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-3"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row char
@@ -152,7 +159,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-4"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row cinq
@@ -164,7 +172,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-5"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row six
@@ -176,7 +185,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-6"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row seven
@@ -188,7 +198,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-7"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row ba
@@ -200,7 +211,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-8"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row neuf
@@ -212,7 +224,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-9"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
             // row dix
@@ -224,7 +237,8 @@ class Generate extends Component {
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                     id = "sq" + String(x) + "-10"
-                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
+                    document.getElementById(id).style.backgroundColor = color;
                 }
             }
 
