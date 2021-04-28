@@ -20,7 +20,7 @@ class Generate extends Component {
                 url: "https://api.spotify.com/v1/audio-analysis/" + trackID,
                 type: "GET",
                 beforeSend: (xhr) => {
-                  xhr.setRequestHeader("Authorization", "Bearer " + token);
+                    xhr.setRequestHeader("Authorization", "Bearer " + token);
                 },
                 success: function (data) {
                     var numSections = data.sections.length
@@ -30,7 +30,7 @@ class Generate extends Component {
                     sections[0] = data.sections[0].duration * 1000
                     loudness[0] = 1 / (data.sections[0].loudness * -1)
                     for (i = 1; i < numSections; i++) {
-                        sections[i] = sections[i-1] + data.sections[i].duration * 1000
+                        sections[i] = sections[i - 1] + data.sections[i].duration * 1000
                         loudness[i] = 1 / (data.sections[i].loudness * -1)
                     }
                     for (i = 0; i < numBeats; i++) {
@@ -40,7 +40,7 @@ class Generate extends Component {
                     console.log("Sections: " + sections)
                     console.log("Loudness: " + loudness)
                 }
-              });
+            });
         });
 
         function sleep(ms) {
@@ -55,7 +55,7 @@ class Generate extends Component {
             } else {
                 playing = false;
             }
-            
+
             console.log(playing);
         }
 
@@ -86,19 +86,20 @@ class Generate extends Component {
             var j;
             var x;
             var y;
+            var alpha;
             var id;
 
             // factors to normalize loudness feature
             var rmin = Math.min.apply(Math, loudness);
             var rmax = Math.max.apply(Math, loudness);
             var tmin = 5;
-            var tmax = 20*10;
+            var tmax = 20 * 10;
 
             var section = getSection(time);
             console.log("In Section: " + section)
             var loudnessFactor = Math.floor(((loudness[section] - rmin) / (rmax - rmin)) * (tmax - tmin) + tmin)
             console.log("Loudness Factor: " + loudnessFactor)
-    
+
             // clearing grid
             for (i = 1; i < 21; i++) {
                 for (j = 1; j < 11; j++) {
@@ -108,17 +109,52 @@ class Generate extends Component {
             }
 
             var alphas = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            for (i = 0; i < loudnessFactor; i++) {
+            var left = loudnessFactor;
+            // fill in first two rows
+            for (i = 0; i < Math.min(40, loudnessFactor); i++) {
                 x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                y = Math.floor(Math.random() * 10) + 1 // getting y coordinate of box
-                var alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+                y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
                 id = "sq" + String(x) + "-" + String(y)
-                //console.log(id)
                 document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
             }
+            left = loudnessFactor - 40;
+            if (left > 0) {
+                // fill in next four rows
+                for (i = 0; i < Math.min(80, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    y = Math.floor(Math.random() * 4) + 3 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-" + String(y)
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            left = left - 80;
+            if (left > 0) {
+                // fill in next four rows
+                for (i = 0; i < Math.min(80, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    y = Math.floor(Math.random() * 4) + 7 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-" + String(y)
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+
+            // for (i = 0; i < loudnessFactor; i++) {
+            //     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+            //     y = Math.floor(Math.random() * 10) + 1 // getting y coordinate of box
+            //     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+            //     id = "sq" + String(x) + "-" + String(y)
+            //     //console.log(id)
+            //     document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+            // }
         }
-        
+
         return (
             <div id="generate">
                 <div id="track-info">
