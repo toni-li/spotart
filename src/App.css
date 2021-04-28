@@ -115,6 +115,42 @@ body {
   margin: 0 auto;
 }
 
+#get-info {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  width: 40%;
+  height: 20%;
+  padding-top: 1%;
+}
+
+#trackURL {
+  width: 60%;
+  height: 20%;
+  padding-top: 1%;
+}
+
+#generate {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  width: 30%;
+  height: 35%;
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #1ecd97;
+  color: #1ecd97;
+  cursor: pointer;
+  font-size: 3vmin;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+#generate:hover {
+  background: #1ecd97;
+  color: #333;
+}
+
 #buffer {
   color: #333;
 }
@@ -1773,9 +1809,49 @@ body {
   border: 1px solid black;
 }
 
+#back {
+  position: absolute;
+  left: 75%;
+  top: 5%;
+  width: 10%;
+  height: 7%;
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #1ecd97;
+  color: #1ecd97;
+  cursor: pointer;
+  font-size: 3vmin;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+#back:hover {
+  background: #1ecd97;
+  color: #333;
+}
+#share {
+  position: absolute;
+  left: 87%;
+  top: 5%;
+  width: 10%;
+  height: 7%;
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #1ecd97;
+  color: #1ecd97;
+  cursor: pointer;
+  font-size: 3vmin;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+#share:hover {
+  background: #1ecd97;
+  color: #333;
+}
+
 #spotifyPlayer {
   position: absolute;
   width: 100%;
   bottom: 0;
 }
-

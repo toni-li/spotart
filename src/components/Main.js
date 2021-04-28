@@ -68,14 +68,15 @@ class Main extends Component {
     }
     return (
       <div id="main">
-        <div className="App-header">
-          <div id="get-info">
-            Track URL: <input type="text" id="trackURL"></input>
-            <button id="getTrack" onClick={() => { getTrackInfo(); }}> Generate </button>
-            <p id="error"> </p>
-          </div>
+        <div id="get-info">
+          <label for="trackURL" id="trackURLLabel"> Track URL: </label>
+          <input type="text" id="trackURL"></input>
+          <br></br>
+          <button id="generate" onClick={() => { getTrackInfo(); }}> Generate </button>
+          <p id="error"> </p>
         </div>
       </div>
+
     )
   }
 }

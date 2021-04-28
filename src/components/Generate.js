@@ -110,53 +110,132 @@ class Generate extends Component {
 
             var alphas = [0, 0.2, 0.4, 0.6, 0.8, 1]
             var left = loudnessFactor;
-            // fill in first two rows
-            for (i = 0; i < Math.min(40, loudnessFactor); i++) {
+            // row uno
+            for (i = 0; i < Math.min(20, loudnessFactor); i++) {
                 x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
                 alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                id = "sq" + String(x) + "-" + String(y)
+                id = "sq" + String(x) + "-1"
                 document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
             }
-            left = loudnessFactor - 40;
+            // row dos
+            left = loudnessFactor - 20;
             if (left > 0) {
-                // fill in next four rows
-                for (i = 0; i < Math.min(80, left); i++) {
+                for (i = 0; i < Math.min(20, left); i++) {
                     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    y = Math.floor(Math.random() * 4) + 3 // getting y coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                    id = "sq" + String(x) + "-" + String(y)
+                    id = "sq" + String(x) + "-2"
                     document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
                 }
             }
-            left = left - 80;
+            // row tres
+            left = left - 20;
             if (left > 0) {
-                // fill in next four rows
-                for (i = 0; i < Math.min(80, left); i++) {
+                for (i = 0; i < Math.min(20, left); i++) {
                     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    y = Math.floor(Math.random() * 4) + 7 // getting y coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                    id = "sq" + String(x) + "-" + String(y)
+                    id = "sq" + String(x) + "-3"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row char
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-4"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row cinq
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-5"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row six
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-6"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row seven
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-7"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row ba
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-8"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row neuf
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-9"
+                    document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
+                }
+            }
+            // row dix
+            left = left - 20;
+            if (left > 0) {
+                for (i = 0; i < Math.min(20, left); i++) {
+                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
+                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
+
+                    id = "sq" + String(x) + "-10"
                     document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
                 }
             }
 
-            // for (i = 0; i < loudnessFactor; i++) {
-            //     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-            //     y = Math.floor(Math.random() * 10) + 1 // getting y coordinate of box
-            //     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-            //     id = "sq" + String(x) + "-" + String(y)
-            //     //console.log(id)
-            //     document.getElementById(id).style.backgroundColor = "rgba(255, 0, 0, " + alphas[alpha] + ")";
-            // }
         }
 
+        function goBack() {
+            window.history.back();
+        }
         return (
-            <div id="generate">
+            <div id="graphic">
                 <div id="track-info">
                     <p id="buffer"> buffer</p>
                     <p id="trackName"> Track: {localStorage.getItem("trackName")} </p>
@@ -368,6 +447,8 @@ class Generate extends Component {
 
                 </div>
 
+                <button id="back" onClick={() => { goBack(); }}> Back </button>
+                <button id="share"> Share </button>
 
                 <div id="spotifyPlayer" onClick={() => { isPlaying(); }}>
                     <SpotifyWebPlayer id="player"
