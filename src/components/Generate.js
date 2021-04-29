@@ -470,9 +470,11 @@ class Generate extends Component {
                         persistDeviceSelection
                         showSaveIcon
                         syncExternalDevice
+                        showSaveIcon = {true}
                         token={token}
                         styles={{
-                            sliderColor: '#1cb954',
+                            activeColor: '#1ecd97',
+                            sliderColor: '#1ecd97',
                         }}
                         uris={[trackURI]}
                     />
