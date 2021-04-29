@@ -109,13 +109,17 @@ class Main extends Component {
     return (
       <div id="main">
         <div id="get-info">
-          <label for="trackURL" id="trackURLLabel"> Track URL: </label>
-          <input type="text" id="trackURL" onBlur={() => { checkURL(); }}></input>
-          <br></br>
-          <br></br>
-          <label for="hexCode" id="hexCodeLabel"> Hex Code: </label>
-          <input type="text" id="hexCode" placeholder="#1ecd97" maxlength="7" onBlur={() => { changeSwatch(); }}></input>
-          <div id="swatch"> </div>
+          <div id="trackcont">
+            <label for="trackURL" id="trackURLLabel"> Track URL: </label>
+            <input type="text" id="trackURL" onBlur={() => { checkURL(); }}></input>
+            <button id="randTrack"> Randomize </button>
+          </div>
+          <div id="hexcont">
+            <label for="hexCode" id="hexCodeLabel"> Hex Code: </label>
+            <input type="text" id="hexCode" placeholder="#1ecd97" maxlength="7" onBlur={() => { changeSwatch(); }}></input>
+            <div id="swatch"> </div>
+            <button id="randHex"> Randomize </button>
+          </div>
           <button id="generate" onClick={() => { getTrackInfo(); }}> Generate </button>
           <p id="error"> </p>
         </div>
