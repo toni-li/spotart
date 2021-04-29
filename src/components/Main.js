@@ -138,7 +138,7 @@ class Main extends Component {
 
     function getRandHex() {
       var randHex = Math.floor(Math.random()*16777215).toString(16);
-      while (randHex.length != 6) {
+      while (randHex.length !== 6) {
         randHex = Math.floor(Math.random()*16777215).toString(16);
       }
       document.getElementById("hexCode").value = "#" + randHex;

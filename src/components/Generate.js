@@ -85,7 +85,7 @@ class Generate extends Component {
             var i;
             var j;
             var x;
-            var y;
+            //var y;
             var alpha;
             var id;
 
@@ -248,6 +248,11 @@ class Generate extends Component {
         function goBack() {
             window.history.back();
         }
+        function toShare() {
+            // redirect to share page
+            window.location.replace("http://localhost:3000/share")
+        }
+
         return (
             <div id="graphic">
                 <div id="track-info">
@@ -458,19 +463,17 @@ class Generate extends Component {
                     <div id="sq20-8">  </div>
                     <div id="sq20-9">  </div>
                     <div id="sq20-10">  </div>
-
                 </div>
 
                 <button id="back" onClick={() => { goBack(); }}> Back </button>
-                <button id="share"> Share </button>
+                <button id="share" onClick={() => { toShare(); }}> Share </button>
 
                 <div id="spotifyPlayer" onClick={() => { isPlaying(); }}>
                     <SpotifyWebPlayer id="player"
                         autoPlay={false}
                         persistDeviceSelection
-                        showSaveIcon
-                        syncExternalDevice
                         showSaveIcon = {true}
+                        syncExternalDevice
                         token={token}
                         styles={{
                             activeColor: '#1ecd97',
