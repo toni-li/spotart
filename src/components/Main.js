@@ -72,7 +72,6 @@ class Main extends Component {
             window.location.replace("http://localhost:3000/generate")
           }
         });
-
       }
     }
 
@@ -106,13 +105,48 @@ class Main extends Component {
       }
     }
 
+    function getRandTrack() {
+      // function to get the token
+      var url = window.location.href
+      var tokenSplit = url.split("=")[1]
+      var token = tokenSplit.split("&")[0]
+      localStorage.setItem("token", token)
+      //console.log(token)
+
+      const alphabet = "abcdefghijklmnopqrstuvwxyz"
+      const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
+
+      //console.log(randomCharacter)
+
+      $.ajax({
+        url: "https://api.spotify.com/v1/search?q=" + randomCharacter + "&type=track&limit=1",
+        type: "GET",
+        beforeSend: (xhr) => {
+          xhr.setRequestHeader("Authorization", "Bearer " + token);
+        },
+        success: function (data) {
+          var trackURL = data.tracks.items[0].external_urls.spotify
+          document.getElementById("trackURL").value = trackURL;
+
+          console.log(trackURL)
+        }
+      });
+
+      document.getElementById("error").innerHTML = "";
+      document.getElementById("generate").style.display = "Block";
+    }
+
+    function getRandHex() {
+
+    }
+
     return (
       <div id="main">
         <div id="get-info">
           <div id="trackcont">
             <label for="trackURL" id="trackURLLabel"> Track URL: </label>
             <input type="text" id="trackURL" onBlur={() => { checkURL(); }}></input>
-            <button id="randTrack"> Randomize </button>
+            <button id="randTrack" onClick={() => { getRandTrack(); }}> Randomize </button>
           </div>
           <div id="hexcont">
             <label for="hexCode" id="hexCodeLabel"> Hex Code: </label>

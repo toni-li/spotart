@@ -214,8 +214,9 @@ body {
 }
 
 #generate {
-  float: center;
-  margin-top: 20%;
+  position: absolute;
+  top: 60%;
+  left: 37%;
   width: 25%;
   height: 20%;
   background-color: transparent;
