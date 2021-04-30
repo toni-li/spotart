@@ -1952,36 +1952,19 @@ body {
   height: 15%;
 }
 
-#containers {
+#resultTable {
   position: absolute;
-  top: 23%;
-  left: 4%;
-  width: 92%;
-  height: 40%;
-  display: inline-block;
+  top: 15%;
+  left: 30%;
+  width: 40%;
+  height: 80%;
 }
 
-#left {
-  float: left;
-  width: 33%;
-  height: 100%;
-  background-color: white;
-  border: 1px solid white;
+table td {
+  width: 50%;
 }
 
-#mid {
-  float: left;
-  width: 33%;
-  height: 100%;
-  background-color: white;
-  border: 1px solid white;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-#right {
-  float: left;
-  width: 33%;
-  height: 100%;
-  background-color: white;
-  border: 1px solid white;
+img {
+  width: 260px;
+  height: 150px;
 }

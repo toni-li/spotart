@@ -69,7 +69,7 @@ class Main extends Component {
             console.log(trackDuration)
             localStorage.setItem("trackDuration", trackDuration)
             // redirect to graphic page
-            window.location.replace("http://localhost:3000/generate")
+            window.location.replace("https://theartspot.herokuapp.com/generate")
           }
         });
       }

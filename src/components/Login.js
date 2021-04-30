@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 export const authEndpoint = 'https://accounts.spotify.com/authorize';
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = "f2a18728feb846ee96af7c0edee169b4";
-const redirectUri = "http://localhost:3000/callback";
+//const redirectUri = "http://localhost:3000/callback";
+const redirectUri = "https://theartspot.herokuapp.com/callback";
 const scopes = [
     'streaming',
     'user-read-email',
