@@ -85,7 +85,7 @@ class Generate extends Component {
             var i;
             var j;
             var x;
-            //var y;
+            var y;
             var alpha;
             var id;
 
@@ -114,135 +114,68 @@ class Generate extends Component {
             var b = localStorage.getItem("b");
             var alphas = [0, 0.2, 0.4, 0.6, 0.8, 1]
             var left = loudnessFactor;
-            // row uno
-            for (i = 0; i < Math.min(20, loudnessFactor); i++) {
+            // row uno and dos
+            for (i = 0; i < Math.min(40, loudnessFactor); i++) {
                 x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
                 alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                id = "sq" + String(x) + "-1"
+                id = "sq" + String(x) + "-" + String(y)
                 color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
                 document.getElementById(id).style.backgroundColor = color;
             }
-            // row dos
-            left = loudnessFactor - 20;
+            // row tres-quatro
+            left = loudnessFactor - 40;
             if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
+                for (i = 0; i < Math.min(40, left); i++) {
                     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    y = Math.floor(Math.random() * 2) + 3 // getting y coordinate of box
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                    id = "sq" + String(x) + "-2"
+                    id = "sq" + String(x) + "-" + String(y)
                     color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
                     document.getElementById(id).style.backgroundColor = color;
                 }
             }
-            // row tres
-            left = left - 20;
+            // row cinq-six
+            left = left - 40;
             if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
+                for (i = 0; i < Math.min(40, left); i++) {
                     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    y = Math.floor(Math.random() * 2) + 5 // getting y coordinate of box
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                    id = "sq" + String(x) + "-3"
+                    id = "sq" + String(x) + "-" + String(y)
                     color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
                     document.getElementById(id).style.backgroundColor = color;
                 }
             }
-            // row char
-            left = left - 20;
+            // row seven-eight
+            left = left - 40;
             if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
+                for (i = 0; i < Math.min(40, left); i++) {
                     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    y = Math.floor(Math.random() * 2) + 7 // getting y coordinate of box
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                    id = "sq" + String(x) + "-4"
+                    id = "sq" + String(x) + "-" + String(y)
                     color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
                     document.getElementById(id).style.backgroundColor = color;
                 }
             }
-            // row cinq
-            left = left - 20;
+            // row neuf-dix
+            left = left - 40;
             if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
+                for (i = 0; i < Math.min(40, left); i++) {
                     x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
+                    y = Math.floor(Math.random() * 2) + 9 // getting y coordinate of box
                     alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
 
-                    id = "sq" + String(x) + "-5"
+                    id = "sq" + String(x) + "-" + String(y)
                     color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
                     document.getElementById(id).style.backgroundColor = color;
                 }
             }
-            // row six
-            left = left - 20;
-            if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
-                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
-                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
-
-                    id = "sq" + String(x) + "-6"
-                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
-                    document.getElementById(id).style.backgroundColor = color;
-                }
-            }
-            // row seven
-            left = left - 20;
-            if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
-                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
-                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
-
-                    id = "sq" + String(x) + "-7"
-                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
-                    document.getElementById(id).style.backgroundColor = color;
-                }
-            }
-            // row ba
-            left = left - 20;
-            if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
-                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
-                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
-
-                    id = "sq" + String(x) + "-8"
-                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
-                    document.getElementById(id).style.backgroundColor = color;
-                }
-            }
-            // row neuf
-            left = left - 20;
-            if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
-                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
-                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
-
-                    id = "sq" + String(x) + "-9"
-                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
-                    document.getElementById(id).style.backgroundColor = color;
-                }
-            }
-            // row dix
-            left = left - 20;
-            if (left > 0) {
-                for (i = 0; i < Math.min(20, left); i++) {
-                    x = Math.floor(Math.random() * 20) + 1 // getting x coordinate of box
-                    //y = Math.floor(Math.random() * 2) + 1 // getting y coordinate of box
-                    alpha = Math.floor(Math.random() * 5) + 1 // getting alpha value
-
-                    id = "sq" + String(x) + "-10"
-                    color = "rgb(" + String(r) + ", " + String(g) + ", " + String(b) + ", " + String(alphas[alpha]) + ")";
-                    document.getElementById(id).style.backgroundColor = color;
-                }
-            }
-
-
         }
 
         function goBack() {
@@ -250,7 +183,7 @@ class Generate extends Component {
         }
         function toShare() {
             // redirect to share page
-            window.location.replace("http://localhost:3000/share")
+            window.location.replace("https://theartspot.herokuapp.com/callback/share")
         }
 
         return (
